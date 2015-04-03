@@ -1,0 +1,7 @@
+server name: apollo.biz.uiowa.edu
+
+Authentication: sql server authorization
+
+User Name: msci3300_g1
+
+Password: Group1password!
