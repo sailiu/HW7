@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="HW_materials_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header">
+            <h1>AECC Clab</h1>
+            <h3>AECC car clab introduce you to other drivers who are pursuing speed and challenge</h3>
+        </div>
+
+
+         
+      
+        <div id="logo">
+            <img src="logo.png" height="150px"/>
+        </div>
+       
+         <div id="cp">
+            <img src="cp.jpg" height="400px" />
+        </div>
+        
+        <div id="links">
+           <h4><a href="Default.aspx">Home Page</a>
+            <a href="newMembers.aspx">Create New Membership</a>
+            <a href="aboutUs.aspx">About Us</a>
+            <a href="contactUs.aspx">Contact Us</a></h4>
+        </div> 
+    
+         
+
+        <div id="mian">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="footer">
+            &copy 2014 MSCI:3300 - Software Design and Development
+        </div>
+
+ </div>
+    </form>
+</body>
+</html>
