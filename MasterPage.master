@@ -30,7 +30,9 @@
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/currentMembers.aspx">Current Members</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/admin/newMembers.aspx">Add New Membership</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/aboutUs.aspx">About Us</asp:HyperLink>
-                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink><br /><br /><br />
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
+                    <br /><br />
                 
                 </h4>
             </div> 
@@ -47,7 +49,8 @@
         </div>
         
         <div id="footer">
-            &copy 2014 MSCI:3300 - Software Design and Development
+           Today is <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+           <br />&copy 2014 MSCI:3300 - Software Design and Development
         </div>
 
  </div>
