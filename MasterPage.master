@@ -32,6 +32,7 @@
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/aboutUs.aspx">About Us</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/admin/currentMembers.aspx">Admin</asp:HyperLink>
                     <br /><br />
                 
                 </h4>
@@ -42,7 +43,7 @@
     
          
 
-        <div id="mian">
+        <div id="main">
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
                 </asp:ContentPlaceHolder>

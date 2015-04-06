@@ -19,7 +19,7 @@
             <asp:Parameter Name="car_model" Type="String" />
             <asp:Parameter Name="ID" Type="Int32" />
         </UpdateParameters>
-    </asp:SqlDataSource>
+</asp:SqlDataSource>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1">
         <Columns>
             <asp:BoundField DataField="member_name" HeaderText="Member Name" SortExpression="member_name" />
@@ -27,6 +27,6 @@
             <asp:BoundField DataField="car_model" HeaderText="Car Model" SortExpression="car_model" />
             <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="~/admin/detailView.aspx?id={0}" HeaderText="Member Details" Text="View" />
         </Columns>
-    </asp:GridView>
+</asp:GridView>
 </asp:Content>
 

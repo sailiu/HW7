@@ -6,10 +6,11 @@
 
 
 body{
-    background-color:#99CCFF;
+    background-color:#0B094A;
     padding-right:20px;
     padding-left:20px;
     text-align:center;
+    color:red;
 }
 
 #logo{
@@ -20,12 +21,31 @@ body{
     text-align:center;
     padding-right:20px;
     padding-left:20px;
-    background-color:#7AA3CC;
+    background-color:#0D131F;
+    color:red;
+    padding-bottom:10px;
+    margin-bottom:20px;
     
 }
 
 #footer{
     text-align:center;
-    background-color:#7AA3CC;
+    color:red;
+    background-color:#0D131F;
    
+}
+
+#main{
+    background-color:black;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+    margin-bottom:20px;
+    padding:20px;
+}
+
+#aboutus{
+    width:50%;
+    text-align:left;
+    
 }
