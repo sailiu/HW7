@@ -12,28 +12,31 @@
 <body>
     <form id="form1" runat="server">
     <div id="container">
-        <div id="header">
-            <h1>AECC Clab</h1>
-            <h3>AECC car clab introduce you to other drivers who are pursuing speed and challenge</h3>
-        </div>
-
 
          
-      
-        <div id="logo">
-            <img src="logo.png" height="150px"/>
+
+        <div id="header">
+            <div id="logo">
+            
+             <asp:Image ID="Logo" runat="server" Height="150px" ImageUrl="~/logo.png" />
+            
         </div>
-       
-         <div id="cp">
-            <img src="cp.jpg" height="400px" />
+            <h1>AECC Clab</h1>
+            <h3>AECC car clab introduce you to other drivers who are pursuing speed and challenge</h3>
+
+            <div id="links">
+                <h4>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home Page</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/currentMembers.aspx">Current Members</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/admin/newMembers.aspx">Add New Membership</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/aboutUs.aspx">About Us</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink><br /><br /><br />
+                
+                </h4>
+            </div> 
         </div>
+         
         
-        <div id="links">
-           <h4><a href="Default.aspx">Home Page</a>
-            <a href="newMembers.aspx">Create New Membership</a>
-            <a href="aboutUs.aspx">About Us</a>
-            <a href="contactUs.aspx">Contact Us</a></h4>
-        </div> 
     
          
 

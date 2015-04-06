@@ -1,14 +1,31 @@
-﻿body {
-    background-color:gray;
+﻿
+
+
+
+
+
+
+body{
+    background-color:#99CCFF;
+    padding-right:20px;
+    padding-left:20px;
+    text-align:center;
 }
 
 #logo{
-    float:right; 
-
+    float:right;
 }
 
-#cp{
-    margin-right:auto;
-    margin-left:auto;
+#header{
+    text-align:center;
+    padding-right:20px;
+    padding-left:20px;
+    background-color:#7AA3CC;
+    
+}
 
+#footer{
+    text-align:center;
+    background-color:#7AA3CC;
+   
 }
