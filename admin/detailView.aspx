@@ -25,26 +25,26 @@
                  <asp:Parameter Name="ID" Type="Int32" />
              </UpdateParameters>
          </asp:SqlDataSource>
-         <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+         <asp:FormView ID="FormView1" runat="server" AllowPaging="True" Cssclass="cssadmin" DataKeyNames="ID" DataSourceID="SqlDataSource1" BorderStyle="None">
              <EditItemTemplate>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Name:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:TextBox ID="tb_memberName" runat="server" Text='<%# Bind("member_name") %>' />
                      </td>
                      <td>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
-                             ControlToValidate="tb_memberName" style="color:red; font-style:italic;" 
+                             ControlToValidate="tb_memberName" style="color:red; font-style:italic; " 
                              runat="server" ErrorMessage="Please enter member name"></asp:RequiredFieldValidator>
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Car Make:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:TextBox ID="tb_carmake" runat="server" Text='<%# Bind("car_make") %>' />
                      </td>
                      <td>
@@ -54,10 +54,10 @@
                      </td>
                  </tr>
                 <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Car Model:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:TextBox ID="car_modelTextBox" runat="server" Text='<%# Bind("car_model") %>' />
                      </td>
                     <td>
@@ -67,43 +67,44 @@
                     </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Phone:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:TextBox ID="member_phoneTextBox" runat="server" Text='<%# Bind("member_phone") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Email:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:TextBox ID="member_emailTextBox" runat="server" Text='<%# Bind("member_email") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Interest:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:TextBox ID="member_interestsTextBox" runat="server" Text='<%# Bind("member_interests") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Location:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                           <asp:TextBox ID="member_locationTextBox" runat="server" Text='<%# Bind("member_location") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                         &nbsp;&nbsp;&nbsp;&nbsp; <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                      </td>
-                     <td>
-                         <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/currentMembers.aspx">Back</asp:HyperLink>
                      </td>
                  </tr>
             
@@ -116,67 +117,70 @@
              <ItemTemplate>
                 
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Name:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:Label ID="member_nameLabel" runat="server" Text='<%# Bind("member_name") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Car Make:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                           <asp:Label ID="car_makeLabel" runat="server" Text='<%# Bind("car_make") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td  style="border-style:solid; border-color:white; border-width:thin;">
                          Car Model:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:Label ID="car_modelLabel" runat="server" Text='<%# Bind("car_model") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Phone:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:Label ID="member_phoneLabel" runat="server" Text='<%# Bind("member_phone") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Email:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                           <asp:Label ID="member_emailLabel" runat="server" Text='<%# Bind("member_email") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Interest:
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                           <asp:Label ID="member_interestsLabel" runat="server" Text='<%# Bind("member_interests") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          Member Location
                      </td>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                          <asp:Label ID="member_locationLabel" runat="server" Text='<%# Bind("member_location") %>' />
                      </td>
                  </tr>
                  <tr>
-                     <td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
                           <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
-                     </td>
-                     <td>
+                         &nbsp;&nbsp;&nbsp;&nbsp;
                          <asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                     </td>
+                     <td style="border-style:solid; border-color:white; border-width:thin;">
+                         
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin/currentMembers.aspx">Back</asp:HyperLink>
                      </td>
                  </tr>
              </ItemTemplate>

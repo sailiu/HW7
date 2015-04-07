@@ -1,16 +1,20 @@
 ﻿
-
-
-
-
-
-
 body{
-    background-color:#0B094A;
+    background-color:black;
     padding-right:20px;
     padding-left:20px;
-    text-align:center;
+  text-align:left;
     color:red;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+#current{
+  
+    color:white;
+    text-align:left;
+    
 }
 
 #logo{
@@ -23,6 +27,7 @@ body{
     padding-left:20px;
     background-color:#0D131F;
     color:red;
+    padding-top:25px;
     padding-bottom:10px;
     margin-bottom:20px;
     
@@ -32,20 +37,49 @@ body{
     text-align:center;
     color:red;
     background-color:#0D131F;
+    padding-right:150pt;
    
 }
 
 #main{
-    background-color:black;
+    background-color:#0D131F;
     margin-right:auto;
     margin-left:auto;
     text-align:center;
     margin-bottom:20px;
     padding:20px;
+     color:white;
+     padding-right:150pt;
 }
 
-#aboutus{
+.aboutus{
     width:50%;
     text-align:left;
-    
+    margin-right:auto;
+    margin-left:auto;
 }
+
+.csslogin{
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    color:red;
+    padding-right:150pt;
+}
+
+.cssdetailview{
+    text-align:left;
+    margin-right:auto;
+    margin-left:auto;
+    color:white;
+    padding-right:150pt;
+}
+
+.cssadmin{
+    text-align:left;
+    margin-right:auto;
+    margin-left:auto;
+    color:white;
+ 
+}
+

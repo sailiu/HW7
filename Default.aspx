@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <img src="cp.JPG"  />
+    <img src="cp.JPG" height="550px" />
 
 </asp:Content>
 

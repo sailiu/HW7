@@ -31,7 +31,7 @@
                  <asp:Parameter Name="ID" Type="Int32" />
              </UpdateParameters>
          </asp:SqlDataSource>
-         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="50px" Width="301px" AllowPaging="True">
+         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" Cssclass="cssdetailview" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="50px" Width="301px" AllowPaging="True">
              <Fields>
                  <asp:BoundField DataField="ID" HeaderText="Member ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
                  <asp:BoundField DataField="member_name" HeaderText="Member Name" SortExpression="member_name" />

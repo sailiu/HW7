@@ -21,80 +21,91 @@
                
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
+        <asp:FormView ID="FormView1" runat="server" Cssclass="cssadmin" DataKeyNames="ID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
             <EditItemTemplate>
               
             </EditItemTemplate>
             <InsertItemTemplate>
+               
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Member Name:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="tb_memberName" runat="server" Text='<%# Bind("member_name") %>' />
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ErrorMessage="Please enter memeber name" style="color:red; font-style:italic;"
                             ControlToValidate="tb_memberName"></asp:RequiredFieldValidator>
                     </td>
                        
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Car Make:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="car_makeTextBox" runat="server" Text='<%# Bind("car_make") %>' />
                     </td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter car make" 
+                            ControlToValidate="car_makeTextBox" style="color:red; font-style:italic;"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Car Model:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="car_modelTextBox" runat="server" Text='<%# Bind("car_model") %>' />
+                    </td>
+                    <td >
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter car model" 
+                            ControlToValidate="car_modelTextBox" style="color:red; font-style:italic;"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Member Phone:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="member_phoneTextBox" runat="server" Text='<%# Bind("member_phone") %>' />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Member Email:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="member_emailTextBox" runat="server" Text='<%# Bind("member_email") %>' />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Member Interest:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="member_interestsTextBox" runat="server" Text='<%# Bind("member_interests") %>' />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         Member Location:
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:TextBox ID="member_locationTextBox" runat="server" Text='<%# Bind("member_location") %>' />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                     </td>
-                    <td>
+                    <td style="border-style:solid; border-color:white; border-width:thin;">
                         <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                     </td>
                 </tr>
+                 
             </InsertItemTemplate>
             <ItemTemplate>
                

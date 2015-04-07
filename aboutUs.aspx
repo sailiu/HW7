@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div id="aboutus"
+    <div class="aboutus"
     <p>&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur nulla et nunc rutrum, ut sagittis 
         dui interdum. Morbi tempor consequat dui quis accumsan. Praesent finibus tincidunt porta. Nam efficitur suscipit 
         orci sed ornare. Pellentesque iaculis dolor vitae volutpat laoreet. Sed sed nisl eu sapien mattis placerat. Vivamus 

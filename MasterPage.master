@@ -29,10 +29,12 @@
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home Page</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/currentMembers.aspx">Current Members</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/admin/newMembers.aspx">Add New Membership</asp:HyperLink>
+                    &nbsp;&nbsp; <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/search.aspx">Seaach</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/aboutUs.aspx">About Us</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
                     &nbsp;&nbsp; <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/admin/currentMembers.aspx">Admin</asp:HyperLink>
+                    
                     <br /><br />
                 
                 </h4>
